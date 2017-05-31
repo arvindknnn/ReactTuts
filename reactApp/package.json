@@ -1,0 +1,25 @@
+{
+  "name": "react_app",
+  "version": "1.0.0",
+  "description": "learn reactjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvindknnn/ReactTuts.git"
+  },
+  "author": "Arvind Kannan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvindknnn/ReactTuts/issues"
+  },
+  "homepage": "https://github.com/arvindknnn/ReactTuts#readme",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
