@@ -1,3 +1,5 @@
+Initial Setup Instructions
+
 Step 1 - Install Global Packages
 
 You will need to install several packages for this setup. We will need some of the babel plugins so let's first install babel by running the following code in command prompt window.
