@@ -52,19 +52,17 @@ class Header extends React.Component {
 
 class TableRow extends React.Component {
     render() {
-        // console.log("I got called");
-        function addCells(data, callback){ 
-            // console.log(data);
-            var index = 0;
-            for ( var cellData in data) {
-                index++;
-                console.log(cellData + "@" + index);
-                callback(data[cellData], index);
+
+        function addCells(data, callback) {
+            var res = [];
+            for (var cellData in data) {
+                res.push(callback(data[cellData]));
             }
+            return res;
         }
         return (
             <tr>
-                {addCells(this.props.data, (cellData, index) => {console.log("Got: " + cellData); return (<TableRowData data = {cellData}/>);})}
+                {addCells(this.props.data, (cellData) => <TableRowData data={cellData} />)}
             </tr>
         );
     }
@@ -72,7 +70,6 @@ class TableRow extends React.Component {
 
 class TableRowData extends React.Component {
     render() {
-        console.log("I came here..");
         return (
             <td>{this.props.data}</td>
         );
